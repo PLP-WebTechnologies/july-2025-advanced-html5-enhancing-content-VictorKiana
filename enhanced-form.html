@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+        }
+        header, main, footer {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        form {
+            display: grid;
+            gap: 15px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea, button {
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .readonly {
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Event Registration Form</h1>
+    <p>Welcome! To Jurasic Park.</p>
+</header>
+
+<main>
+    <section>
+        <h2>Event Highlights</h2>
+        <ul>
+            <li>Inspirational keynote speakers</li>
+            <li>Networking sessions with industry leaders</li>
+            <li>Interactive workshops</li>
+            <li>Live entertainment</li>
+        </ul>
+
+        <h2>Event Schedule</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Activity</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>09:00 AM</td>
+                    <td>Registration & Breakfast</td>
+                    <td>Lobby</td>
+                </tr>
+                <tr>
+                    <td>10:00 AM</td>
+                    <td>Opening Keynote</td>
+                    <td>Main Hall</td>
+                </tr>
+                <tr>
+                    <td>01:00 PM</td>
+                    <td>Workshop Sessions</td>
+                    <td>Conference Rooms</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Venue Preview</h2>
+        <img src="https://images.pexels.com/photos/716276/pexels-photo-716276.jpeg" alt="Event Venue Image">
+        <audio src="THAT GUY.mp3" controls></audio>
+        <video width="640" height="360" controls poster="thumbnail.jpg">
+    <source src="THAT GUY.mp4" type="video/mp4">
+
+
+    </section>
+
+    <section>
+        <h2>Register Now</h2>
+        <form action="#" method="post" autocomplete="on">
+            
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="e.g., +254700123456" pattern="^\+?\d{10,15}$" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <button type="submit">Submit Registration</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 A BRAND CAMP DIGITAL EVENT. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
